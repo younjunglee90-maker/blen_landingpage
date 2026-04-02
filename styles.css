@@ -166,6 +166,7 @@ body{
     width: min(62vw, 300px);
     max-height: none;
     margin: 14px auto 0;
+    transform: translateX(-10px);
   }
   .hero__content{
     position: relative;
@@ -239,6 +240,7 @@ body{
   .hero__art{
     width: min(64vw, 250px);
     margin-top: 8px;
+    transform: translateX(-8px);
   }
   .hero__actions--mobile{
     padding: 0 16px;
