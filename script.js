@@ -4,10 +4,11 @@ const ANDROID_URL = "#";
 const IOS_URL = "#";
 
 function bindStoreLinks(){
-  const androidBtn = document.getElementById("androidBtn");
-  const iosBtn = document.getElementById("iosBtn");
-  if (androidBtn) androidBtn.href = ANDROID_URL;
-  if (iosBtn) iosBtn.href = IOS_URL;
+  document.querySelectorAll(".store-link").forEach((link) => {
+    const store = link.getAttribute("data-store");
+    if (store === "android") link.href = ANDROID_URL;
+    if (store === "ios") link.href = IOS_URL;
+  });
 }
 
 bindStoreLinks();

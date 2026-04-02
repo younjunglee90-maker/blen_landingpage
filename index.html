@@ -23,10 +23,10 @@
               가장 잘 맞는 상대를 찾아드립니다.
             </p>
 
-            <div class="hero__actions" role="group" aria-label="다운로드">
+            <div class="hero__actions hero__actions--desktop" role="group" aria-label="다운로드">
               <a
-                id="androidBtn"
-                class="btn btn--android"
+                class="btn btn--android store-link"
+                data-store="android"
                 href="#"
                 target="_blank"
                 rel="noopener"
@@ -34,8 +34,8 @@
                 안드로이드 다운로드
               </a>
               <a
-                id="iosBtn"
-                class="btn btn--ios"
+                class="btn btn--ios store-link"
+                data-store="ios"
                 href="#"
                 target="_blank"
                 rel="noopener"
@@ -44,6 +44,27 @@
               </a>
             </div>
           </div>
+        </div>
+
+        <div class="hero__actions hero__actions--mobile" role="group" aria-label="다운로드">
+          <a
+            class="btn btn--android store-link"
+            data-store="android"
+            href="#"
+            target="_blank"
+            rel="noopener"
+          >
+            안드로이드 다운로드
+          </a>
+          <a
+            class="btn btn--ios store-link"
+            data-store="ios"
+            href="#"
+            target="_blank"
+            rel="noopener"
+          >
+            iOS 다운로드
+          </a>
         </div>
       </section>
     </main>
