@@ -39,7 +39,7 @@ body{
   position: absolute;
   right: clamp(24px, 5vw, 70px);
   bottom: 52px;
-  width: min(47%, 475px);
+  width: min(42%, 428px);
   max-height: 96%;
   height: auto;
   object-fit: contain;
@@ -142,7 +142,7 @@ body{
     font-size: clamp(18px, 2.2vw, 28px);
   }
   .hero__art{
-    width: min(45%, 420px);
+    width: min(40%, 378px);
     right: 16px;
   }
 }
@@ -163,7 +163,7 @@ body{
     order: 2;
     right: auto;
     bottom: auto;
-    width: min(62vw, 300px);
+    width: min(56vw, 270px);
     max-height: none;
     margin: 14px auto 0;
     transform: translateX(-14px);
@@ -238,7 +238,7 @@ body{
     font-size: clamp(16px, 5.6vw, 23px);
   }
   .hero__art{
-    width: min(64vw, 250px);
+    width: min(58vw, 225px);
     margin-top: 8px;
     transform: translateX(-14px);
   }
