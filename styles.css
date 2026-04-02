@@ -38,7 +38,7 @@ body{
 .hero__art{
   position: absolute;
   right: clamp(24px, 5vw, 70px);
-  bottom: 52px;
+  bottom: 94px;
   width: min(42%, 428px);
   max-height: 96%;
   height: auto;
