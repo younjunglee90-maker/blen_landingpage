@@ -14,17 +14,194 @@ html, body{
 
 body{
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   /* 한글 폰트는 사용자가 설치되어 있지 않다고 해서 아무 폰트 폴백으로 처리 */
   font-family: "Noto Sans KR", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple SD Gothic Neo", sans-serif;
   background: var(--bg);
 }
 
-.page{
+.site-header{
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  flex-shrink: 0;
   width: 100%;
-  min-height: 100vh;
+  background: rgba(255, 221, 135, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(47, 47, 47, 0.08);
+}
+
+.site-nav{
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 14px clamp(20px, 5vw, 32px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.site-nav__right{
+  display: flex;
+  align-items: center;
+  gap: clamp(12px, 3vw, 24px);
+  flex-shrink: 0;
+}
+
+.site-lang{
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(47, 47, 47, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.site-lang__btn{
+  margin: 0;
+  padding: 8px 12px;
+  border: none;
+  background: transparent;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: rgba(47, 47, 47, 0.55);
+  cursor: pointer;
+  transition: background 120ms ease, color 120ms ease;
+}
+
+.site-lang__btn:hover{
+  color: var(--text);
+  background: rgba(47, 47, 47, 0.06);
+}
+
+.site-lang__btn--active{
+  color: var(--text);
+  background: rgba(47, 47, 47, 0.12);
+}
+
+.site-lang__btn + .site-lang__btn{
+  border-left: 1px solid rgba(47, 47, 47, 0.12);
+}
+
+.site-nav__brand{
+  font-family: "Baloo", "Baloo 2", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 1.35rem;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.site-nav__brand:hover{
+  opacity: 0.85;
+}
+
+.site-nav__list{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav__link{
+  display: inline-block;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: rgba(47, 47, 47, 0.75);
+  text-decoration: none;
+  border-radius: 6px;
+  transition: color 120ms ease, background 120ms ease;
+}
+
+.site-nav__link:hover{
+  color: var(--text);
+  background: rgba(47, 47, 47, 0.06);
+}
+
+.site-nav__link--active{
+  color: var(--text);
+  background: rgba(47, 47, 47, 0.1);
+}
+
+.page{
+  flex: 1;
+  width: 100%;
+  min-height: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.about{
+  flex: 1;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: clamp(28px, 5vw, 48px) clamp(20px, 5vw, 32px) clamp(40px, 8vw, 64px);
+}
+
+.about__title{
+  margin: 0 0 12px;
+  font-family: "Baloo", "Baloo 2", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.about__lead{
+  margin: 0 0 24px;
+  font-size: clamp(1rem, 2.4vw, 1.125rem);
+  font-weight: 500;
+  line-height: 1.65;
+  color: rgba(43, 43, 43, 0.88);
+}
+
+.about__text--lead{
+  margin: 0 0 16px;
+  font-size: clamp(1.02rem, 2.5vw, 1.15rem);
+  font-weight: 500;
+  line-height: 1.65;
+  color: rgba(43, 43, 43, 0.9);
+}
+
+.about__text + .about__text{
+  margin-top: 14px;
+}
+
+.about__link{
+  color: var(--text);
+  font-weight: 600;
+  text-underline-offset: 3px;
+}
+
+.about__link:hover{
+  opacity: 0.8;
+}
+
+.about__section{
+  margin-top: 28px;
+}
+
+.about__heading{
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.about__text{
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: rgba(47, 47, 47, 0.82);
 }
 
 .hero{
@@ -238,7 +415,24 @@ body{
   }
 }
 
+@media (max-width: 480px){
+  .site-nav__right{
+    gap: 10px;
+  }
+  .site-lang__btn{
+    padding: 6px 10px;
+    font-size: 0.75rem;
+  }
+}
+
 @media (max-width: 420px){
+  .site-nav{
+    padding: 12px 16px;
+  }
+  .site-nav__link{
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
   .hero{
     min-height: auto;
   }
