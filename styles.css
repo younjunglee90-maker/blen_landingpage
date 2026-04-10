@@ -209,9 +209,9 @@ body{
   letter-spacing: -0.02em;
 }
 
-/* PC: 강제 <br> 제거해 문단이 자연스럽게 줄바꿈되도록 (모바일은 br 유지) */
+/* PC: 영어 전용 줄바꿈만 숨김. 한국어 `이해하고,` 뒤 줄바꿈(br--ko)은 그대로 유지 */
 @media (min-width: 721px){
-  .hero__subtitle br{
+  .hero__subtitle-br--en{
     display: none;
   }
 }
