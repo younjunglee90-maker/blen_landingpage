@@ -204,7 +204,7 @@ body{
   color: rgba(43, 43, 43, 0.88);
   font-weight: 500;
   font-family: "Noto Sans KR", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple SD Gothic Neo", sans-serif;
-  font-size: clamp(22px, 1.43vw, 35px);
+  font-size: clamp(19px, 1.22vw, 30px);
   line-height: 1.42;
   letter-spacing: -0.02em;
 }
@@ -279,7 +279,7 @@ body{
     font-size: clamp(56px, 8vw, 78px);
   }
   .hero__subtitle{
-    font-size: clamp(18px, 2.2vw, 28px);
+    font-size: clamp(16px, 1.9vw, 24px);
   }
   .hero__art{
     width: min(40%, 378px);
@@ -329,7 +329,7 @@ body{
   }
   .hero__subtitle{
     margin-top: 14px;
-    font-size: clamp(18px, 6.1vw, 28px);
+    font-size: clamp(16px, 5.4vw, 24px);
     line-height: 1.45;
     max-width: 96%;
   }
@@ -382,7 +382,7 @@ body{
     font-size: clamp(50px, 17vw, 66px);
   }
   .hero__subtitle{
-    font-size: clamp(16px, 5.6vw, 23px);
+    font-size: clamp(14px, 5vw, 20px);
   }
   .hero__art{
     width: min(58vw, 225px);
