@@ -7,50 +7,28 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body data-page="home">
-    <header class="site-header">
-      <nav
-        class="site-nav"
-        aria-label="Main"
-        data-i18n-attr="aria-label"
-        data-i18n-key="navAria"
-      >
-        <a class="site-nav__brand" href="index.html">Blen</a>
-        <div class="site-nav__right">
-          <ul class="site-nav__list">
-            <li>
-              <a
-                class="site-nav__link site-nav__link--active"
-                href="index.html"
-                aria-current="page"
-                data-i18n="navHome"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a class="site-nav__link" href="about/" data-i18n="navAbout">About</a>
-            </li>
-          </ul>
-          <div
-            class="site-lang"
-            role="group"
-            aria-label="Language"
-            data-i18n-attr="aria-label"
-            data-i18n-key="langAria"
+    <header class="site-header site-header--lang-only">
+      <div class="site-header__inner">
+        <div
+          class="site-lang"
+          role="group"
+          aria-label="Language"
+          data-i18n-attr="aria-label"
+          data-i18n-key="langAria"
+        >
+          <button
+            type="button"
+            class="site-lang__btn site-lang__btn--active"
+            data-set-lang="en"
+            aria-pressed="true"
           >
-            <button
-              type="button"
-              class="site-lang__btn site-lang__btn--active"
-              data-set-lang="en"
-              aria-pressed="true"
-            >
-              ENG
-            </button>
-            <button type="button" class="site-lang__btn" data-set-lang="ko" aria-pressed="false">
-              KO
-            </button>
-          </div>
+            ENG
+          </button>
+          <button type="button" class="site-lang__btn" data-set-lang="ko" aria-pressed="false">
+            KO
+          </button>
         </div>
-      </nav>
+      </div>
     </header>
 
     <main class="page">
