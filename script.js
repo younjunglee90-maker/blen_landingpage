@@ -14,7 +14,7 @@ const I18N = {
     langAria: "Language",
     heroAria: "Blen introduction",
     heroSubtitle:
-      "AI understands your personality in depth,<br />and helps you find your most compatible match.",
+      "AI understands your personality in depth, <br />and helps you find your most compatible match.",
     btnAndroid: "Android Download",
     btnIos: "iOS Download",
     downloadAria: "Download",
@@ -45,7 +45,7 @@ const I18N = {
     langAria: "언어",
     heroAria: "Blen 소개",
     heroSubtitle:
-      "AI가 당신의 성향을 깊이 이해하고,<br />가장 잘 맞는 상대를 찾아드립니다.",
+      "AI가 당신의 성향을 깊이 이해하고, <br />가장 잘 맞는 상대를 찾아드립니다.",
     btnAndroid: "안드로이드 다운로드",
     btnIos: "iOS 다운로드",
     downloadAria: "다운로드",
