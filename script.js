@@ -45,7 +45,7 @@ const I18N = {
     langAria: "언어",
     heroAria: "Blen 소개",
     heroSubtitle:
-      'AI가 당신의 성향을 깊이 이해하고,<br class="hero__subtitle-br--ko" />가장 잘 맞는 상대를 찾아드립니다.',
+      '<span class="hero__subtitle-ko-line1">AI가 당신의 성향을 깊이 이해하고,</span><span class="hero__subtitle-ko-line2">가장 잘 맞는 상대를 찾아드립니다.</span>',
     btnAndroid: "안드로이드 다운로드",
     btnIos: "iOS 다운로드",
     downloadAria: "다운로드",

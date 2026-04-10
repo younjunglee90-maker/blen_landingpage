@@ -209,6 +209,16 @@ body{
   letter-spacing: -0.02em;
 }
 
+/* 한국어: 첫 줄(이해하고,) / 둘째 줄(가장 잘 맞는…) 고정 — br 대신 block span으로 확실히 분리 */
+.hero__subtitle-ko-line2{
+  display: block;
+  margin-top: 0.2em;
+}
+
+html[lang="ko"] .hero__subtitle{
+  word-break: keep-all;
+}
+
 /* PC: 영어 전용 줄바꿈만 숨김. 한국어 `이해하고,` 뒤 줄바꿈(br--ko)은 그대로 유지 */
 @media (min-width: 721px){
   .hero__subtitle-br--en{
